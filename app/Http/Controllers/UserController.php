@@ -36,6 +36,6 @@ class UserController extends Controller
 
 	public function actionLog(Request $request)
 	{
-		return JsonData();
+		return JsonData($request['userModel']->actionLog()->get());
 	}
 }
