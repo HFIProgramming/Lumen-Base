@@ -49,6 +49,10 @@ class Handler extends ExceptionHandler
 			return JsonData(['Model' => $e->getModel()], $e->getMessage(), 404);
 		}
 
+		if ($e instanceof HttpException) {
+			return JsonStatus($e->getMessage(), $e->getStatusCode());
+		}
+
 		return parent::render($request, $e);
 	}
 }

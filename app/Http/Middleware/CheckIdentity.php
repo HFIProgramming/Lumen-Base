@@ -23,7 +23,7 @@ class CheckIdentity
 		$userId = Cache::get($storedToken);
 
 		// Missing Login Cred
-		if (empty($token) && empty($userId)) {
+		if (empty($token) || empty($userId)) {
 			return JsonStatus('Login Required', 401);
 		}
 
