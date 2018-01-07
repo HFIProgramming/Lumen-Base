@@ -14,8 +14,6 @@ use Illuminate\Support\Facades\Validator;
 class ResetPasswordController extends Controller
 {
 
-	public $UserResetLockPrefix = 'UserResetTimes-';
-
 	public function __construct()
 	{
 	}

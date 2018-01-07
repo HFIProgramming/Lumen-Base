@@ -11,8 +11,6 @@ use Illuminate\Support\Facades\Mail;
 
 class ForgetPasswordController extends Controller
 {
-	public $UserResetLockPrefix = 'UserResetTimes-';
-
 	//
 	public function __construct()
 	{

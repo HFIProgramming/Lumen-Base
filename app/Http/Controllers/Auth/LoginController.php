@@ -11,10 +11,6 @@ use Illuminate\Support\Facades\Cache;
 class LoginController extends Controller
 {
 	//
-
-	public $loginLockPrefix = 'UserLoginLocked-';
-	public $loginTokenPrefix = 'UserToken-';
-
 	public function __construct()
 	{
 	}
